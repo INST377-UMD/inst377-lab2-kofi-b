@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+        <title>INST377 - Lab 2 - Contact form</title>
+        <style>
+            #submitButton:hover{
+                background-color: bisque;
+            }
+            #submitButton {
+                background-color: lightcoral;
+                /*font-size: 10px;*/
+                padding: 10px 10px;
+                margin: 10px;
+            }
+            .formItems {
+                margin: 10px;
+                #formN, #formE {
+                    font-size: 21px;
+                }
+            }
+            * {
+                background-color: lightblue;
+            }
+            input {
+                padding: 5px;
+                margin: 2px;
+                background-color: white;
+            }
+        </style>
+        <!--
+        <script type="text/javascript">
+            function formSubmitted(event){
+                event.preventDefault();
+                document.getElementById("page1").style.display = "none";
+                document.getElementById("page2").style.display = "block";
+                document.body.style.backgroundColor = "lightgreen";
+            };
+        </script>
+        -->
+    </head>
+    <body>
+        <div id="page1">
+            <h1>INST377 - Lab 2 - Contact Me</h1>
+            <form action="thankYou.html">
+                <div class="formItems">
+                    <label for="formName" id="formN">Name:</label>
+                    <input type="text" name="formName" placeholder="John Doe"><br>
+                    <label for="formEmail" id="formE">Email:</label>
+                    <input type="text" name="formEmail" placeholder="hi@umd.edu" required><br>
+                </div>
+                <input type="submit" value="Submit" id="submitButton">      
+            </form>
+        </div>
+        <!--<div id="page2" style="display: none;">
+            <div>
+                <h1 style="text-align: center;">Thank you for submitting the form!</h1>
+                <p style="text-align: left;">Thank you for submitting the form!</p><br>
+                <img id="thankYou" src="https://thumbs.dreamstime.com/b/thank-you-lettering-blurred-lights-background-thank-you-lettering-102011881.jpg" alt="Thank you">
+            </div>
+        </div>-->
+    </body>
+    
+</html>
