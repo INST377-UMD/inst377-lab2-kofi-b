@@ -17,7 +17,7 @@
                     font-size: 21px;
                 }
             }
-            body {
+            * {
                 background-color: lightblue;
             }
             input {
@@ -25,16 +25,8 @@
                 margin: 2px;
                 background-color: white;
             }
-            #thankYou {
-                width: 50%;
-                height: 50%;
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                width: 50%;
-            }
-
         </style>
+        <!--
         <script type="text/javascript">
             function formSubmitted(event){
                 event.preventDefault();
@@ -43,11 +35,12 @@
                 document.body.style.backgroundColor = "lightgreen";
             };
         </script>
+        -->
     </head>
     <body>
         <div id="page1">
             <h1>INST377 - Lab 2 - Contact Me</h1>
-            <form onsubmit="formSubmitted(event)">
+            <form action="thankYou.html">
                 <div class="formItems">
                     <label for="formName" id="formN">Name:</label>
                     <input type="text" name="formName" placeholder="John Doe"><br>
@@ -57,13 +50,13 @@
                 <input type="submit" value="Submit" id="submitButton">      
             </form>
         </div>
-        <div id="page2" style="display: none;">
+        <!--<div id="page2" style="display: none;">
             <div>
                 <h1 style="text-align: center;">Thank you for submitting the form!</h1>
                 <p style="text-align: left;">Thank you for submitting the form!</p><br>
                 <img id="thankYou" src="https://thumbs.dreamstime.com/b/thank-you-lettering-blurred-lights-background-thank-you-lettering-102011881.jpg" alt="Thank you">
             </div>
-        </div>
+        </div>-->
     </body>
     
 </html>
